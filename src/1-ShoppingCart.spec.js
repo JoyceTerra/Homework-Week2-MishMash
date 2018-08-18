@@ -1,6 +1,7 @@
-const assert = require("assert")
+const {ShoppingCart} = require('./shoppingCart');
+const assert = require("assert");
 
-describe("Assignment 1 - ShoppingCart", function() {
+describe.only("Assignment 1 - ShoppingCart", function() {
 
   it("JS file should exist, and exported value should be a constructor", function() {
     const ShoppingCart = require("../src/ShoppingCart")
@@ -90,3 +91,4 @@ describe("Assignment 1 - ShoppingCart", function() {
     assert.strictEqual(cart1.getItems()[0].quantity, 2, "Not only the items array should be copied, but also the items themselves. There are many ways to copy objects; don't make it harder than it needs to be.")
   })
 })
+

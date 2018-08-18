@@ -1,4 +1,5 @@
-const {ShoppingCart} = require('./shoppingCart');
+const ShoppingCart = require("../src/ShoppingCart")
+
 const assert = require("assert");
 
 describe.only("Assignment 1 - ShoppingCart", function() {

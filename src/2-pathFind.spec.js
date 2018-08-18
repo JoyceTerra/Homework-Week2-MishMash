@@ -1,3 +1,4 @@
+const { pathFind } = require("./pathFind")
 const assert = require("assert")
 
 describe("Assignment 2 - pathFind", function() {

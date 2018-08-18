@@ -6,8 +6,8 @@ function giveItBackLater(value, callback){
     setTimeout(loadComplete, 100)
 }
 
-const addSomePromises = (newPromise) =>
-    newPromise
+const addSomePromises = (somePromise) =>
+    somePromise
     .then(resolved = promiseToGiveItBackLater(resolved.reapeat(2)))
     .catch(rejected => promiseToGiveItBackLater(rejected.reapeat(3)))
 
@@ -20,7 +20,5 @@ const promiseToGiveItBackLater = (value) =>{
      setTimeout(giveItBackLater, 1000)
     })
 }
-//  giveItBackLater()
-//  addSomePromises()
-//  promiseToGiveItBackLater()
+
 module.exports = {giveItBackLater, addSomePromises, promiseToGiveItBackLater}

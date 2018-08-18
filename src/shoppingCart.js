@@ -19,17 +19,18 @@ class ShoppingCart{
         this.item = []
     }
     clone(){
-
+       // return new ShoppingCart(this.item)
+       //console.log(item)
     }
 }
 
 
-let cart = new ShoppingCart("ahoahi", 32, 45)
+let cart = new ShoppingCart();
 cart.getItems();
 cart.addItem("Trash can", 1, 15.5);
 cart.clear();
+cart.clone();
 
-console.log("AAAAAAAAAAAAAAA", cart)
 
 
 module.exports =  ShoppingCart

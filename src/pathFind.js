@@ -1,15 +1,26 @@
-// // let path = ['name', 'size', 'color'];
-// // let object = {
-// //     name: 'Fulano',
-// //     size: 12,
-// //     color: red
-// // }
+const path = [
+    "Hey",
+    "should return the foo property"
+]
 
-// function pathFind(path, object){
+const obj = {
+    foo1: {
+      foo2: {
+        foo2: {
+          bar: "Some value"
+        }
+      },
+      foo1: "Hey",
+      bar: 123
+    },
+    bar: "Another value"
+  }
 
-//     return this.object
-// }
+function pathFind(path, obj){
+
+    return// pathFind(["foo"], obj)
+}
 
 
 
-// module.exports = {pathFind}
+module.exports = {pathFind}

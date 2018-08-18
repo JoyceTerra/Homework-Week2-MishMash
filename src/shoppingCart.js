@@ -25,11 +25,11 @@ class ShoppingCart{
 }
 
 
-let cart = new ShoppingCart();
-cart.getItems();
-cart.addItem("Trash can", 1, 15.5);
-cart.clear();
-cart.clone();
+let cart = new ShoppingCart()
+cart.getItems()
+cart.addItem("Trash can", 1, 15.5)
+cart.clear()
+cart.clone()
 
 
 
